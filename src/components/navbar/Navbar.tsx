@@ -57,7 +57,7 @@ const Navbar = () => {
         <div className=" hidden lg:flex items-center ">
           <div className=" flex items-center space-x-4">
             <span className="mr-2">Dark Mode</span>
-            <Switch />
+            <Switch className=" cursor-pointer"/>
 
             <Button variant="default" className=" cursor-pointer">Login</Button>
           </div>
@@ -65,9 +65,9 @@ const Navbar = () => {
 
         {/* mobile hamber menu */}
         <div className=" lg:hidden">
-          <button variant="outline" size="icon">
+          <Button variant="outline" size="icon">
             <AiOutlineMenu size={28}/>
-          </button>
+          </Button>
         </div>
       </nav>
     </header>
