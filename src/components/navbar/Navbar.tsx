@@ -34,7 +34,8 @@ const Navbar = () => {
               <NavigationMenuLink href="/news" className={`${pathname === '/news' ? 'text-rose-600 font-semibold cursor-pointer' : ""} hover:text-rose-600`}>News</NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className={` cursor-pointer font-normal hover:text-rose-600`}>Services</NavigationMenuTrigger>
+              <NavigationMenuLink href="/services" className={`${pathname === '/services' ? 'text-rose-600 font-semibold cursor-pointer' : ""} hover:text-rose-600`}>
+              <NavigationMenuTrigger className=" font-normal ">Services</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className=" text-gray-600 shadow-md rounded-md px-4 py-3   ">
                   <li>
@@ -48,6 +49,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </NavigationMenuContent>
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem className="flex items-center space-x-8">
               <NavigationMenuLink href="/about" className={`${pathname === '/about' ? 'text-rose-600 font-semibold cursor-pointer' : ""} hover:text-rose-600`}>About</NavigationMenuLink>
