@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 import {
   NavigationMenu,
@@ -10,12 +12,15 @@ import {
 import { Switch } from "../ui/switch";
 import { Button } from "../ui/button";
 import { AiOutlineMenu } from "react-icons/ai";
+import { usePathname } from "next/navigation";
 
 
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   return (
-    <header className="py-4 px-10 shadow-md ">
+    <header className="py-4 px-20 shadow-md ">
       <nav className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
         {/* logo */}
         <div className="text-xl font-bold">
@@ -26,10 +31,10 @@ const Navbar = () => {
         <NavigationMenu className=" hidden mx-auto items-center  lg:flex">
           <NavigationMenuList>
             <NavigationMenuItem className="flex items-center space-x-8">
-              <NavigationMenuLink href="/news" className=" text-md hover:text-blue-500">News</NavigationMenuLink>
+              <NavigationMenuLink href="/news" className={`${pathname === '/news' ? 'text-rose-600 text-md font-semibold' : ""} hover:text-rose-600`}>News</NavigationMenuLink>
             </NavigationMenuItem>
-            <NavigationMenuItem className=" hover:text-blue-500">
-              <NavigationMenuTrigger className=" text-gray-700 text-md cursor-pointer" >Services</NavigationMenuTrigger>
+            <NavigationMenuItem className=" hover:text-rose-600">
+              <NavigationMenuTrigger className={`text-md cursor-pointer hover:text-rose-600`}>Services</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className=" text-gray-600 shadow-md rounded-md px-4 py-3   ">
                   <li>
@@ -45,7 +50,7 @@ const Navbar = () => {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem className="flex items-center space-x-8">
-              <NavigationMenuLink href="/about" className=" text-md hover:text-blue-500">About</NavigationMenuLink>
+              <NavigationMenuLink href="/about" className=" text-md hover:text-rose-600">About</NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem className="flex items-center space-x-8">
               <NavigationMenuLink href="/contact" className=" text-md hover:text-blue-500">Contact</NavigationMenuLink>
