@@ -31,29 +31,29 @@ const Navbar = () => {
         <NavigationMenu className=" hidden mx-auto items-center  lg:flex">
           <NavigationMenuList>
             <NavigationMenuItem className="flex items-center space-x-8">
-              <NavigationMenuLink href="/news" className={`${pathname === '/news' ? 'text-rose-600 text-md font-semibold' : ""} hover:text-rose-600`}>News</NavigationMenuLink>
+              <NavigationMenuLink href="/news" className={`${pathname === '/news' ? 'text-rose-600 font-semibold cursor-pointer' : ""} hover:text-rose-600`}>News</NavigationMenuLink>
             </NavigationMenuItem>
-            <NavigationMenuItem className=" hover:text-rose-600">
-              <NavigationMenuTrigger className={`text-md cursor-pointer hover:text-rose-600`}>Services</NavigationMenuTrigger>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className={` cursor-pointer font-normal hover:text-rose-600`}>Services</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className=" text-gray-600 shadow-md rounded-md px-4 py-3   ">
                   <li>
-                <NavigationMenuLink href="/services/web" className="text-md">Web Development</NavigationMenuLink>
+                <NavigationMenuLink href="/services/web">Web Development</NavigationMenuLink>
                   </li>
                   <li>
-                <NavigationMenuLink href="/services/apps" className="text-md">Mobile Apps</NavigationMenuLink>
+                <NavigationMenuLink href="/services/apps">Mobile Apps</NavigationMenuLink>
                   </li>
                   <li>
-                <NavigationMenuLink href="/services/seo" className="text-md">Seo</NavigationMenuLink>
+                <NavigationMenuLink href="/services/seo">Seo</NavigationMenuLink>
                   </li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem className="flex items-center space-x-8">
-              <NavigationMenuLink href="/about" className=" text-md hover:text-rose-600">About</NavigationMenuLink>
+              <NavigationMenuLink href="/about" className={`${pathname === '/about' ? 'text-rose-600 font-semibold cursor-pointer' : ""} hover:text-rose-600`}>About</NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem className="flex items-center space-x-8">
-              <NavigationMenuLink href="/contact" className=" text-md hover:text-blue-500">Contact</NavigationMenuLink>
+              <NavigationMenuLink href="/contact" className={`${pathname === '/contact' ? 'text-rose-600 font-semibold cursor-pointer' : ""} hover:text-rose-600`}>Contact</NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
