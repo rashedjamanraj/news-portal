@@ -23,7 +23,7 @@ const Navbar = () => {
     <header className="py-4 px-20 shadow-md ">
       <nav className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
         {/* logo */}
-        <div className="text-xl font-bold">
+        <div className="text-xl tracking-wide font-bold">
           <Link href="/">News Portal</Link>
         </div>
 
