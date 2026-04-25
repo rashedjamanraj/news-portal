@@ -1,6 +1,6 @@
 import Banner from "@/components/navbar/shared/Banner";
 import NewsCard from "@/components/navbar/shared/NewsCard";
-import { NewsItem } from "@/types/news";
+import { Product  } from "@/types/news";
 import { log } from "console";
 import Image from "next/image";
 
@@ -20,7 +20,7 @@ export default async function Home () {
       <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
         {
-          news.slice(0, 3).map((products: NewsItem) => (
+          news.slice(0, 3).map((products: Product ) => (
             <NewsCard key={products?.id} products={products}/>
           ))
         }

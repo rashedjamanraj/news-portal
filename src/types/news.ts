@@ -41,5 +41,5 @@ export interface Product {
 }
 
 export interface NewsCardProps {
-  products: NewsItem
+  products: Product 
 }
