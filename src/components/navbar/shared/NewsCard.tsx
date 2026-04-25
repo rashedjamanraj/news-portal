@@ -4,8 +4,10 @@ import React from 'react'
 
 import newsImage from "@/assests/banner.jpg"
 import { Button } from '@/components/ui/button'
+import { NewsCardProps } from '@/types/news'
 
-const NewsCard = () => {
+
+const NewsCard = ({products}: NewsCardProps) => {
   return (
     <div className='px-1 md:px-20"'>
       <div className=' border p-4 rounded-md shadow-md'>

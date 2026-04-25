@@ -1,4 +1,5 @@
 
+import { NewsCard } from '@/components/navbar/shared/NewsCard';
 const news = {
 
 }
@@ -6,19 +7,34 @@ const news = {
 
 export interface NewsItem {
   id: number;
-  name: string;
-  ingredients: string[];
-  instructions: string[];
-  prepTimeMinutes: number;
-  cookTimeMinutes: number;
-  servings: number;
-  difficulty: "Easy" | "Medium" | "Hard";
-  cuisine: string;
-  caloriesPerServing: number;
-  tags: string[];
-  userId: number;
-  image: string;
+  title: string;
+  description: string;
+  category: string;
+  price: number;
+  discountPercentage: number;
   rating: number;
-  reviewCount: number;
-  mealType: string[];
+  stock: number;
+  tags: string[];
+  brand: string;
+  sku: string;
+  weight: number;
+  dimensions: {
+    width: number;
+    height: number;
+    depth: number;
+  };
+  warrantyInformation: string;
+  shippingInformation: string;
+  availabilityStatus: string;
+  reviews: {
+    rating: number;
+    comment: string;
+    date: string;
+    reviewerName: string;
+    reviewerEmail: string;
+  }[];
+}
+
+export interface NewsCardProps {
+  products: NewsItem
 }
