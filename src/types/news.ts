@@ -1,11 +1,6 @@
 
-import { NewsCard } from '@/components/navbar/shared/NewsCard';
-const news = {
 
-}
-
-
-export interface NewsItem {
+export interface Product {
   id: number;
   title: string;
   description: string;
@@ -33,6 +28,16 @@ export interface NewsItem {
     reviewerName: string;
     reviewerEmail: string;
   }[];
+  returnPolicy: string;
+  minimumOrderQuantity: number;
+  meta: {
+    createdAt: string;
+    updatedAt: string;
+    barcode: string;
+    qrCode: string;
+  };
+  images: string[];
+  thumbnail: string;
 }
 
 export interface NewsCardProps {

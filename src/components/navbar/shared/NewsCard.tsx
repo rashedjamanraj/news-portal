@@ -12,7 +12,13 @@ const NewsCard = ({products}: NewsCardProps) => {
     <div className='px-1 md:px-20"'>
       <div className=' border p-4 rounded-md shadow-md'>
       <Link href={"/"}>
-        <Image src={newsImage} alt='news image' className=' mb-5 md:h-56 rounded hover:scale-104 cursor-pointer transition-all duration-200'/>
+        <Image 
+  src={products?.thumbnail || products?.images?.[0]} 
+  alt={products?.title || "Product image"} 
+  width={500} 
+  height={300} 
+  className="mb-5 md:h-56 rounded hover:scale-104 cursor-pointer transition-all duration-200"
+/>
       </Link>
 
       <div>
