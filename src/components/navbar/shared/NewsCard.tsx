@@ -11,7 +11,7 @@ const NewsCard = ({products}: NewsCardProps) => {
   return (
     <div className='px-1 md:px-20"'>
       <div className=' border p-4 rounded-md shadow-md'>
-      <Link href={"/"}>
+      <Link href={`/news/${products?.id}`}>
         <Image 
   src={products?.thumbnail || products?.images?.[0]} 
   alt={products?.title || "Product image"} 
@@ -24,8 +24,8 @@ const NewsCard = ({products}: NewsCardProps) => {
       <div>
         {/* <h2 className=' text-xl font-semibold my-3'>Provide energy for the body. There are three kinds of carbohydrates: sugar, starch, and fibre.</h2>
         <p className='mb-4'>Iodine is for the thyroid gland (in the neck area), which regulates growth and many body functions</p> */}
-        <h2 className='truncate text-xl font-semibold my-3'> {products.title} </h2>
-        <p className='mb-4 line-clamp-4'>{products.description}</p>
+        <h2 className='truncate text-xl font-semibold my-3'> {products?.title} </h2>
+        <p className='mb-4 line-clamp-4'>{products?.description}</p>
         <Link href={"/"}>
           <Button variant="default">Read More</Button>
         </Link>
