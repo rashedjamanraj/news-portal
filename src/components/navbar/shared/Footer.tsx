@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
 import Link from 'next/link';
-import { AiOutlineTwitter, AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineGithub, AiOutlineX } from "react-icons/ai";
 
 
 
@@ -40,7 +40,7 @@ const Footer = () => {
               aria-label="Twitter"
               className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
             >
-              <AiOutlineTwitter size={24} />
+              <AiOutlineX size={24} />
             </a>
             <a
               href="https://instagram.com/rashedjamanraj"
@@ -61,15 +61,14 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="mt-8 text-center md:flex md:justify-between md:items-center">
-          <p className="text-gray-600 dark:text-gray-400">
-            &copy; 2026 YourCompany. All rights reserved.
-          </p>
+          <p className='text-sm'> Copyright &copy; {new Date().getFullYear()} <Link href="/" className=" text-blue-600 hover:text-red-400">News Portal </Link> All rights reserved</p>
 
-          <Button variant="outline" className="mt-4 md:mt-0 dark:bg-gray-900 dark:text-white">
+          <Button variant="outline" className="mt-4 md:mt-0 dark:bg-gray-900 dark:text-white cursor-pointer">
             Subscribe
           </Button>
         </div>
       </div>
+      <p className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-30 text-sm">Developed by- <span className='text-sky-500 font-light italic'>Rashed Jaman Raj</span></p>
     </footer>
   )
 }
