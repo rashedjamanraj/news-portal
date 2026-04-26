@@ -24,8 +24,8 @@ const NewsCard = ({products}: NewsCardProps) => {
       <div>
         <h2 className='truncate text-xl font-semibold my-3'> {products?.title} </h2>
         <p className='mb-4 line-clamp-4'>{products?.description}</p>
-        <Link href={"/"}>
-          <Button variant="default">Read More</Button>
+        <Link href={`/news/${products?.id}`}>
+          <Button variant="default" className=' cursor-pointer'>Read More</Button>
         </Link>
       </div>
       </div>
