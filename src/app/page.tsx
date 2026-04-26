@@ -1,5 +1,6 @@
 import Banner from "@/components/navbar/shared/Banner";
 import NewsCard from "@/components/navbar/shared/NewsCard";
+import NewsLetter from "@/components/navbar/shared/NewsLetter";
 import { Product  } from "@/types/news";
 import { log } from "console";
 import Image from "next/image";
@@ -26,6 +27,7 @@ export default async function Home () {
         }
       </div>
      </div>
+     <NewsLetter />
     </div>
   );
 }

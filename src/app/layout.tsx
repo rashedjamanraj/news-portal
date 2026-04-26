@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/navbar/shared/Footer";
 
 const rubik = Rubik({
   variable: "--font-rubik",
@@ -26,7 +27,7 @@ export default function RootLayout({
       
         <main className="min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">{children}</main>
 
-      <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">Footer</footer>
+      <footer> <Footer /></footer>
       </body>
       
     </html>
