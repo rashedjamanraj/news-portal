@@ -11,7 +11,7 @@ const NewsLetter = () => {
         </h2>
         <p className="mt-4 text-lg">
           Subscribe to our newsletter and get the latest updates directly in
-          your inbox.   hhh
+          your inbox.
         </p>
 
         {/* Subscription Form */}
