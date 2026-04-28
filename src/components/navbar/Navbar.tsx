@@ -26,7 +26,7 @@ const Navbar = () => {
       <nav className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
         {/* logo */}
         <div className="text-xl tracking-wide font-bold ">
-          <Link href="/" className=""> <span className=" text-white px-1 mr-0.5 bg-rose-600 text-2xl rounded-bl-lg rounded-tr-lg">N</span>ews Portal</Link>
+          <Link href="/" className=""> <span className=" text-white px-1 mr-0.5 bg-rose-600 text-2xl rounded-bl-lg rounded-tr-lg">E</span>-commerce </Link>
           <p className="text-xxs text-gray-500 dark:text-gray-400">
         Building a better digital experience for everyone.
       </p>
