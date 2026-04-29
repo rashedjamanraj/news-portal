@@ -11,7 +11,7 @@ const Banner = () => {
         <div>
           <Image src={bannerImg} alt='banner' className="md:w-full md:h-103 md:object-cover"/>
 
-          {/* <Image src="https://images.unsplash.com/photo-1596558450268-9c27524ba856?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fG1vYmlsZXxlbnwwfHwwfHx8MA%3D%3D" width={500} height={450} alt='dynamic image'/> */}
+          
         </div>
         
         {/* content */}

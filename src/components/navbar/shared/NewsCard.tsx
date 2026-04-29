@@ -16,7 +16,7 @@ const NewsCard = ({products}: NewsCardProps) => {
   src={products?.thumbnail || products?.images?.[0]} 
   alt={products?.title || "Product image"} 
   width={500} 
-  height={300} 
+  height={300} priority 
   className="mb-5 md:h-56 rounded hover:scale-104 cursor-pointer transition-all duration-200"
 />
       </Link>
