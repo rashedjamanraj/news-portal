@@ -4,6 +4,8 @@ import { fetchNews } from '@/lib/fetchNews';
 import React, { useEffect, useState } from 'react'
 import { Product } from './../../types/news';
 import NewsCard from '../navbar/shared/NewsCard';
+import SearchBar from './SearchBar';
+import CetegoryFilter from './CetegoryFilter';
 
 const NewsesList = () => {
   const [news, setNews] = useState<Product[]>([]);
@@ -22,7 +24,11 @@ const NewsesList = () => {
   console.log(news)
   return (
     <div>
-      
+      <div className=' flex flex-col md:flex-row md:item-center justify-between gap-4 md:gap-12 mb-5 ' >
+        <SearchBar onSearch={setSearch}/>
+
+        <CetegoryFilter />
+      </div>
 
       {/* News Card */}
       <div className=' grid grid-cols-1 lg:grid-cols-3 gap-6'>
