@@ -1,6 +1,8 @@
 {
   "cSpell.words": [
     "Aboutpage",
+    "categoryes",
+    "Cetegory",
     "Contactpage",
     "hamber",
     "Healthpage",
@@ -14,5 +16,6 @@
     "Spotspage",
     "Technoligy",
     "Techpage"
-  ]
+  ],
+  "files.autoSave": "afterDelay"
 }
